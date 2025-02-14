@@ -1,0 +1,105 @@
+{
+    "HomePage": {
+      "title": "Hello world!",
+      "about": "Go to the about page"
+    },
+    "IntroPage":{
+      "title": "Your Mobile Banking",
+      "title2": "Who Assures",
+      "description": "Send & Receive money instantly. Pay for goods and services between BantuPay users."
+    },
+      "AboutPage": {
+          "title": "About Bantu Pay",
+          "description": "Bantu-Pay is a Mobile Banking app for consumers to transfer money instantly and maintain an E-wallet for their daily needs.",
+        
+          "point1": "Traditional banks in D.R. Congo don’t see a certain class of people as potential clients.",
+          "point2": "Online money remittance platforms charge high fees, discouraging consumers.",
+          "point3": "Receivers must travel to city centers to collect funds, adding transportation costs.",
+          "solution": "Well, that stops now!",
+          "paragraph1": "BantuPay is the solution—a mobile banking app facilitating instant money transfers for everyone in D.R. Congo and the diaspora.",
+          "paragraph2": "It serves as an E-Wallet and payment system, enabling consumers to pay for goods and services (restaurants, online courses, boutiques, etc.) and deposit/withdraw money from local money agents.",
+          "image_caption": "Your Mobile Banking Who Assures"
+      },
+      
+        "FeaturesPage": {
+          "title": "Features In This App",
+          "subtitle": "Your Digital Transactions Are Going To Be Smoother With These Game-Changing Additions",
+          "feature1_title": "Low Transaction Fees",
+          "feature1_description": "Low Sending Fee Even Lower Withdrawing Fee",
+          "feature2_title": "Instant Money Transfer",
+          "feature2_description": "Send & Receive Money Instantly",
+          "feature3_title": "Customer Support",
+          "feature3_description": "A Multilingual Customer Support To Handle Your Queries Promptly",
+          "feature4_title": "Transactions Security",
+          "feature4_description": "All Transactions Are Secured And Tracked",
+          "feature5_title": "Local Agents",
+          "feature5_description": "Money Agents Services Available Near You To Collect or Deposit Cash",
+          "feature6_title": "Transactions",
+          "feature6_description": "Keep Track Of All Your Incomings & Outgoings",
+          "feature7_title": "Instant Transactions",
+          "feature7_description": "Pay For Goods Or Services Instantly",
+          "feature8_title": "Visa Card Support",
+          "feature8_description": "Top-Up Your Mobile Banking With Visa Card"
+        
+      },
+        "PricingPage":{
+      
+        "PricingPage_Header_Title": "Choose Your Plan",
+        "PricingPage_Header_Description": "Bantupay offers ",
+        "PricingPage_Header_Description1": "6 Account Plans",
+        "PricingPage_Header_Description2": "or its users to manage their daily transactions according to their needs. Each Account comes equipped with its very own",
+        "PricingPage_Header_Description3": "unique features",
+        "PricingPage_Header_Description4": " Choose Yours...",
+        "PricingPage_Diaspora_Title": "Diaspora",
+        "PricingPage_Diaspora_Feature1": "First Of Its Kind In D.R. Congo For Users Who Live Outside The Congo",
+        "PricingPage_Diaspora_Feature2": "Send Money Back Home INSTANTLY",
+        "PricingPage_Diaspora_Feature3": "Receive Money From Back Home INSTANTLY Into Your BantuPay Account",
+        "PricingPage_Diaspora_Feature4": "Top Up Your Account With Any Visa Card",
+        "PricingPage_Diaspora_Feature5": "Deposit And Withdraw Cash At Any Local Money Agent When In D.R.Congo",
+        "PricingPage_Diaspora_Feature6": "Top Up Mobile Credit when in Congo",
+        "PricingPage_Diaspora_Feature7": "Absolutely Free No Monthly Cost",
+      
+        "PricingPage_BasicStudent_Title": "Basic / Student",
+        "PricingPage_BasicStudent_Feature1": "$0 Monthly Cost",
+        "PricingPage_BasicStudent_Feature2": "Send & Receive Money INSTANTLY",
+        "PricingPage_BasicStudent_Feature3": "Deposit And Withdraw Cash Amount At Any Local Money Agent In D.R.Congo",
+        "PricingPage_BasicStudent_Feature4": "Top Up Mobile Credit",
+        "PricingPage_BasicStudent_Feature5": "Account Can Be Upgraded Anytime",
+      
+        "PricingPage_Premium_Title": "Premium Account",
+        "PricingPage_Premium_Feature1": "Best Of Both Worlds Of Current As Well As Savings Account",
+        "PricingPage_Premium_Feature2": "Send & Receive Money INSTANTLY",
+        "PricingPage_Premium_Feature3": "Deposit And Withdraw Cash Amount At Any Local Money Agent In D.R.Congo",
+        "PricingPage_Premium_Feature4": "Top Up Your Account With Any Visa Card",
+        "PricingPage_Premium_Feature5": "Top Up Mobile Credit",
+        "PricingPage_Premium_Feature6": "Low Monthly Fee",
+      
+        "PricingPage_TraderAgent_Title": "Trader’s / Agent Account",
+        "PricingPage_TraderAgent_Feature1": "Partner Up With Bantupay",
+        "PricingPage_TraderAgent_Feature2": "Facilitate Users With Your Services",
+        "PricingPage_TraderAgent_Feature3": "Competitive Rates",
+        "PricingPage_TraderAgent_Feature4": "Access To a Free PREMIUM Account",
+        "PricingPage_TraderAgent_Feature5": "Top Up Your BantuPay Account With Any Visa Card",
+      
+        "PricingPage_Startup_Title": "Startup Account",
+        "PricingPage_Startup_Feature1": "Are you a Startup? Voila an Account for Your Startup And Personal Use?",
+        "PricingPage_Startup_Feature2": "Get 1 Business, 1 Current, And 1 Savings Account + Virtual VISA Card",
+        "PricingPage_Startup_Feature3": "Send & Receive Money INSTANTLY",
+        "PricingPage_Startup_Feature4": "Deposit And Withdraw Cash Amount At Any Local Money Agent In D.R.Congo",
+        "PricingPage_Startup_Feature5": "Top Up Your BantuPay Account With Any Visa Card",
+        "PricingPage_Startup_Feature6": "Top Up Mobile Credit",
+        "PricingPage_Startup_Feature7": "Low Monthly Fee",
+      
+        "PricingPage_Business_Title": "Business Account",
+        "PricingPage_Business_Feature1": "Are you a Business owner? Needing Multiple Accounts For Business & Personal Use?",
+        "PricingPage_Business_Feature2": "2 Business, 2 Savings, And 1 Current Account + Virtual Visa Card",
+        "PricingPage_Business_Feature3": "Send & Receive Money INSTANTLY",
+        "PricingPage_Business_Feature4": "Deposit And Withdraw Cash Amount At Any Local Money Agent In D.R.Congo",
+        "PricingPage_Business_Feature5": "Top Up Your Account With Any Visa Card",
+        "PricingPage_Business_Feature6": "Top Up Mobile Credit",
+        "PricingPage_Business_Feature7": "Low Monthly Fee"
+      }
+      
+      
+    
+  }
