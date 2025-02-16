@@ -8,7 +8,7 @@ import PreSignUpForm from '../components/signup';
 import Carousel from '../components/carousel';
 import Map from '../components/map';
 import ContactForm from '../components/contact';
-
+import PricingTable from '../components/Pricingss';
 
 export default function HomePage() {
   const t = useTranslations('HomePage');
@@ -25,6 +25,7 @@ export default function HomePage() {
       < Carousel />
       < Map />
       < ContactForm />
+      < PricingTable />
     </div>
   );
 }

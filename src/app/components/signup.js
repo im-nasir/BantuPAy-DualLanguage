@@ -4,20 +4,23 @@ import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-
+import { useTranslations } from "next-intl";
+import { motion } from "framer-motion";
 
 const Select = dynamic(() => import("react-select"), { ssr: false });
 
-const accountOptions = [
-  { value: "diaspora", label: "Diaspora" },
-  { value: "business", label: "Business" },
-  { value: "startup", label: "Startup" },
-  { value: "premium", label: "Premium" },
-  { value: "basic_student", label: "Basic/Student" },
-  { value: "agent", label: "Agent" },
-];
-
 export default function PreSignUpForm() {
+  const t = useTranslations("SignupPages");
+
+  const accountOptions = [
+    { value: "diaspora", label: t("account_options.diaspora") },
+    { value: "business", label: t("account_options.business") },
+    { value: "startup", label: t("account_options.startup") },
+    { value: "premium", label: t("account_options.premium") },
+    { value: "basic_student", label: t("account_options.basic_student") },
+    { value: "agent", label: t("account_options.agent") },
+  ];
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -41,76 +44,107 @@ export default function PreSignUpForm() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-[#F5EDE1] px-6">
+    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gradient-to-br from-[#F7D9C4] to-[#8B4513] px-6 py-10">
       {/* Left Side - Image */}
-      <div className="md:w-1/2 flex justify-center">
-        <img src="/signup.png" alt="Signup Image" className="max-w-xl w-full drop-shadow-xl rounded-lg" />
-      </div>
-
-
+      <motion.div
+        className="md:w-1/2 flex justify-center"
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        <img
+          src="/signup.png"
+          alt="Signup Illustration"
+          className="max-w-lg w-full drop-shadow-lg rounded-lg"
+        />
+      </motion.div>
 
       {/* Right Side - Form */}
-      <div className="md:w-1/2 bg-white p-8 shadow-lg rounded-lg max-w-lg">
-        <h2 className="text-3xl font-bold mb-4 text-black">Pre - SignUp Form</h2>
-        <p className="text-gray-600 mb-6">
-          Do You Want to Be The First One To Be Part Of The BantuPay Community For When We Launch ..? Then Leave Your Details Below!!!
-        </p>
+      <motion.div
+        className="md:w-1/2 bg-white p-8 shadow-2xl rounded-2xl max-w-lg border border-[#8B4513] relative"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
+        {/* Decorative Circle */}
+        <div className="absolute top-0 left-0 w-16 h-16 bg-[#8B4513] rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
 
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <h2 className="text-4xl font-bold mb-4 text-[#8B4513] text-center">
+          {t("pre_signup_title")}
+        </h2>
+        <p className="text-gray-600 mb-6 text-center">{t("pre_signup_description")}</p>
+
+        <form onSubmit={handleSubmit} className="space-y-6">
           {/* Name Input */}
-          <input
-            type="text"
-            placeholder="Your Name"
-            value={formData.name}
-            onChange={(e) => handleChange("name", e.target.value)}
-            className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-gray-400"
-            required
-          />
-
-          {/* Email Input */}
-          <input
-            type="email"
-            placeholder="Your Email"
-            value={formData.email}
-            onChange={(e) => handleChange("email", e.target.value)}
-            className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-gray-400"
-            required
-          />
-
-          {/* Phone Input */}
-          <PhoneInput
-            country={"pk"}
-            value={formData.phone}
-            onChange={(phone) => handleChange("phone", phone)}
-            inputProps={{
-              required: true,
-              className: "w-full p-3 border rounded-lg",
-            }}
-            containerClass="w-full"
-            inputClass="w-full !p-3 !border rounded-lg"
-          />
-
-          {/* Select Dropdown - Fix Hydration Issue */}
-          {isMounted && (
-            <Select
-              options={accountOptions}
-              placeholder="Account Interested"
-              className="w-full"
-              onChange={(selectedOption) => handleChange("accountType", selectedOption)}
-              isSearchable={false}
+          <div className="relative">
+            <input
+              type="text"
+              placeholder={t("name_placeholder")}
+              value={formData.name}
+              onChange={(e) => handleChange("name", e.target.value)}
+              className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-[#8B4513] outline-none bg-[#F9F3ED] text-[#562315] shadow-sm"
               required
             />
+          </div>
+
+          {/* Email Input */}
+          <div className="relative">
+            <input
+              type="email"
+              placeholder={t("email_placeholder")}
+              value={formData.email}
+              onChange={(e) => handleChange("email", e.target.value)}
+              className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-[#8B4513] outline-none bg-[#F9F3ED] text-[#562315] shadow-sm"
+              required
+            />
+          </div>
+
+          {/* Phone Input */}
+          <div className="relative">
+            <PhoneInput
+              country={"us"}
+              value={formData.phone}
+              onChange={(phone) => handleChange("phone", phone)}
+              inputProps={{
+                required: true,
+                className: "w-full p-3 border rounded-lg focus:ring-2 focus:ring-[#8B4513] outline-none bg-[#F9F3ED] text-[#562315] shadow-sm",
+              }}
+              containerClass="w-full"
+              inputClass="w-full !p-3 !border rounded-lg"
+            />
+          </div>
+
+          {/* Select Dropdown (Hydration Issue Fix) */}
+          {isMounted && (
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              <Select
+                options={accountOptions}
+                placeholder={t("account_placeholder")}
+                className="w-full"
+                onChange={(selectedOption) =>
+                  handleChange("accountType", selectedOption)
+                }
+                isSearchable={false}
+                required
+              />
+            </motion.div>
           )}
 
           {/* Submit Button */}
-          <button
+          <motion.button
             type="submit"
-            className="w-full bg-[#8B4513] text-white py-3 rounded-lg text-lg font-semibold hover:bg-[#5A2D0C] transition duration-300"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="w-full bg-[#8B4513] text-white py-3 rounded-lg text-lg font-semibold hover:bg-[#5A2D0C] transition-all duration-300 shadow-lg"
           >
-            Sign Up
-          </button>
+            {t("signup_button")}
+          </motion.button>
         </form>
-      </div>
+      </motion.div>
     </div>
   );
 }

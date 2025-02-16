@@ -99,11 +99,50 @@
     "PricingPage_Business_Feature5": "Rechargez Votre Compte Avec N'importe Quelle Carte Visa",
     "PricingPage_Business_Feature6": "Rechargez Votre Crédit Mobile",
     "PricingPage_Business_Feature7": "Faible Frais Mensuel"
+},
+    "SignupPages":{
+      "pre_signup_title": "Formulaire de pré-inscription",
+  "pre_signup_description": "Voulez-vous être le premier à faire partie de la communauté BantuPay dès notre lancement..? Laissez vos coordonnées ci-dessous !!!",
+  "name_placeholder": "Votre nom",
+  "email_placeholder": "Votre email",
+  "phone_placeholder": "Votre téléphone",
+  "account_placeholder": "Compte souhaité",
+  "signup_button": "S'inscrire",
+
+  "account_options": {
+      "diaspora": "Diaspora",
+      "business": "Entreprise",
+      "startup": "Startup",
+      "premium": "Premium",
+      "basic_student": "Basique/Étudiant",
+      "agent": "Agent"
+     }
+    
+  },
+
+  "CarouselPages": {
+  "title": "Captures d'écran de l'application",
+  "description": "Que contient l'application ?",
+  "description2": "Voyez par vous-même !"
+},
+"MapPages": {
+  "title": "Où nous opérons",
+  "description": "Vous pouvez accéder au service BantuPay si vous résidez dans :",
+  "description2": "Europe – Royaume-Uni – USA – Canada – R.D. Congo"
+},
+
+"ContactPages": {
+  "title": "Contactez-nous",
+  "description": "N'hésitez pas à nous contacter pour toute question. Nous répondons rapidement !",
+  "name": "Prénom",
+  "email": "Votre e-mail",
+  "phone" : "your Phone",
+  "message": "Message",
+  "buttonMsg": "Envoyer le message"
 }
 
 
-    
-    
 
 
-  }
+
+}

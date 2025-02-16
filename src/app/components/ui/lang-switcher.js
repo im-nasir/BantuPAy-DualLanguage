@@ -1,5 +1,3 @@
-// 
-
 'use client';
 
 import { useRouter } from 'next/navigation';
@@ -23,33 +21,53 @@ export default function LangSwitch() {
             {/* Button to Toggle Dropdown */}
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="flex items-center gap-1 border-2 rounded p-2 text-xs "
+                className="flex items-center gap-1 border border-gray-300 bg-white shadow-sm rounded-full px-2 py-1 text-[10px] sm:text-xs md:text-sm hover:bg-gray-100 transition-all duration-200"
             >
                 <Image
                     src={localActive === 'fr' ? '/french.svg' : '/english.svg'}
                     alt="Current Language"
-                    width={20}
-                    height={20}
+                    width={14} height={14} // Smaller icons for mobile
+                    className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6"
                 />
-                {localActive === 'fr' ? 'Français' : 'English'}
+                <span className="text-[10px] sm:text-xs md:text-sm font-medium">
+                    {localActive === 'fr' ? 'Fr' : 'En'}
+                </span>
             </button>
 
             {/* Dropdown List */}
             {isOpen && (
-                <ul className="absolute bg-white border mt-2 shadow-lg rounded text-xs" >
+                <ul className="absolute right-0 bg-white border border-gray-300 mt-2 shadow-lg rounded-lg overflow-hidden w-[80px] sm:w-[100px]">
                     <li
-                        className="flex items-center gap-1 p-2 cursor-pointer hover:bg-gray-100"
+                        className={`flex items-center gap-1 p-2 cursor-pointer ${
+                            localActive === 'en' ? 'bg-gray-200' : 'hover:bg-gray-100'
+                        } transition-all duration-200`}
                         onClick={() => handleLocaleChange('en')}
                     >
-                        <Image src="/english.svg" alt="English" width={20} height={20} />
-                        English
+                        <Image
+                            src="/english.svg"
+                            alt="English"
+                            width={14} height={14}
+                            className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6"
+                        />
+                        <span className="text-[10px] sm:text-xs md:text-sm font-medium">
+                            English
+                        </span>
                     </li>
                     <li
-                        className="flex items-center gap-1 p-2 cursor-pointer hover:bg-gray-100 text-xs"
+                        className={`flex items-center gap-1 p-2 cursor-pointer ${
+                            localActive === 'fr' ? 'bg-gray-200' : 'hover:bg-gray-100'
+                        } transition-all duration-200`}
                         onClick={() => handleLocaleChange('fr')}
                     >
-                        <Image src="/french.svg" alt="Français" width={20} height={20} />
-                        Français
+                        <Image
+                            src="/french.svg"
+                            alt="Français"
+                            width={14} height={14}
+                            className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6"
+                        />
+                        <span className="text-[10px] sm:text-xs md:text-sm font-medium">
+                            Français
+                        </span>
                     </li>
                 </ul>
             )}
