@@ -40,7 +40,11 @@ export default function PreSignUpForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form Data Submitted:", formData);
+    // Construct the mailto link with the form data
+    const mailtoLink = `mailto:admin@bantu-pay.com?subject=New SignUp Form&body=Name: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0APhone: ${formData.phone}%0D%0AAccount Type: ${formData.accountType?.label || 'N/A'}`;
+    
+    // Open the email client with the mailto link
+    window.location.href = mailtoLink;
   };
 
   return (

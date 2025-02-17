@@ -7,6 +7,29 @@ import { useTranslations } from "next-intl";
 export default function ContactForm() {
   const t = useTranslations("ContactPages");
   const [phone, setPhone] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Construct the mailto link with the form data
+    const mailtoLink = `mailto:admin@bantu-pay.com?subject=Contact%20Form%20Message&body=Name:%20${encodeURIComponent(
+      name
+    )}%0AEmail:%20${encodeURIComponent(email)}%0APhone:%20${encodeURIComponent(
+      phone
+    )}%0AMessage:%20${encodeURIComponent(message)}`;
+
+    // Open the email client with the pre-filled information
+    window.location.href = mailtoLink;
+
+    // Clear the form fields after submission
+    setName("");
+    setEmail("");
+    setPhone("");
+    setMessage("");
+  };
 
   return (
     <div className="bg-gradient-to-b from-[#F7F0E7] to-[#EADBC8] min-h-screen flex flex-col items-center py-12 px-4">
@@ -18,15 +41,17 @@ export default function ContactForm() {
         {t("description")}
       </p>
 
-      {/* Form Container */}
-      <div className="w-full max-w-lg md:max-w-2xl bg-white p-8 md:p-10 mt-8 rounded-xl shadow-lg">
+      {/* Form Container with border */}
+      <div className="w-full max-w-lg md:max-w-2xl bg-white p-8 md:p-10 mt-8 rounded-xl shadow-lg border-2 border-[#8B4513]">
         {/* Name Input */}
         <div className="mb-4">
           <label className="block text-gray-700 font-medium">{t("name")}</label>
           <input
             type="text"
             placeholder={t("name")}
-            className="w-full p-3 rounded-md border border-gray-300 bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#582D1D] transition-all duration-200 hover:shadow-md"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full p-3 rounded-md border border-gray-300 bg-[#F9F3ED] text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#582D1D] transition-all duration-200 hover:shadow-md"
           />
         </div>
 
@@ -36,7 +61,9 @@ export default function ContactForm() {
           <input
             type="email"
             placeholder={t("email")}
-            className="w-full p-3 rounded-md border border-gray-300 bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#582D1D] transition-all duration-200 hover:shadow-md"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="w-full p-3 rounded-md border border-gray-300 bg-[#F9F3ED] text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#582D1D] transition-all duration-200 hover:shadow-md"
           />
         </div>
 
@@ -47,6 +74,10 @@ export default function ContactForm() {
             country={"us"}
             value={phone}
             onChange={(value) => setPhone(value)}
+            inputProps={{
+              required: true,
+              className: "w-full p-3 border rounded-lg focus:ring-2 focus:ring-[#8B4513] outline-none bg-[#F9F3ED] text-[#562315] shadow-sm",
+            }}
             inputClass="!w-full !h-12 !p-3 !rounded-md !border !border-gray-300 !bg-white !text-gray-900 focus:!outline-none focus:!ring-2 focus:!ring-[#582D1D] transition-all duration-200 hover:!shadow-md"
             containerClass="w-full"
           />
@@ -58,12 +89,18 @@ export default function ContactForm() {
           <textarea
             placeholder={t("message")}
             rows="4"
-            className="w-full p-3 rounded-md border border-gray-300 bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#582D1D] transition-all duration-200 hover:shadow-md"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            className="w-full p-3 rounded-md border border-gray-300 bg-[#F9F3ED] text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#582D1D] transition-all duration-200 hover:shadow-md"
           ></textarea>
         </div>
 
         {/* Submit Button */}
-        <button className="w-full p-3 rounded-md bg-[#582D1D] text-white font-semibold text-lg shadow-md hover:bg-[#402218] hover:scale-105 transition-all duration-300">
+        <button
+          type="submit"
+          onClick={handleSubmit}
+          className="w-full p-3 rounded-md bg-[#582D1D] text-white font-semibold text-lg shadow-md hover:bg-[#402218] hover:scale-105 transition-all duration-300"
+        >
           {t("buttonMsg")}
         </button>
       </div>
