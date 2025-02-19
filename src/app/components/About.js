@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
@@ -16,13 +16,15 @@ export default function About() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <div className="relative group overflow-hidden rounded-lg ">
+        <div className="relative w-full max-w-md md:max-w-2xl h-[700px]">
           <Image
             src="/About.png"
             alt="Bantu Pay"
-            width={800}
-            height={700}
-            className="rounded-lg object-cover w-full max-w-md md:max-w-2xl transition-transform duration-500 group-hover:scale-105"
+            fill
+            className="rounded-lg object-cover"
+            placeholder="blur"
+            blurDataURL="data:About.png"
+            priority
           />
           {/* Image Overlay Effect */}
           <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg" />

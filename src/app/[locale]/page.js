@@ -20,12 +20,12 @@ export default function HomePage() {
       < Intro />
       < About />
       < FeaturesSection />
-      < AccountPlans />
+      < PricingTable />
       < PreSignUpForm />
       < Carousel />
       < Map />
       < ContactForm />
-      < PricingTable />
+    
     </div>
   );
 }
