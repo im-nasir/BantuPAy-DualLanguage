@@ -7,7 +7,7 @@ export default function Navbar() {
     <nav className="navbar">
       {/* Logo */}
       <div className="navbar-logo">
-        <Image src="/Logo.png" alt="Logo" width={70} height={70} />
+        <Image src="/Logo.png" alt="Logo" width={70} height={70} priority = {true}/>
       </div>
 
       {/* Navbar Links */}

@@ -27,6 +27,7 @@ export default function LangSwitch() {
                     src={localActive === 'fr' ? '/french.svg' : '/english.svg'}
                     alt="Current Language"
                     width={14} height={14} // Smaller icons for mobile
+                    priority = {true}
                     className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6"
                 />
                 <span className="text-[10px] sm:text-xs md:text-sm font-medium">
@@ -63,6 +64,7 @@ export default function LangSwitch() {
                             src="/french.svg"
                             alt="Français"
                             width={14} height={14}
+                            priority = {true}
                             className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6"
                         />
                         <span className="text-[10px] sm:text-xs md:text-sm font-medium">

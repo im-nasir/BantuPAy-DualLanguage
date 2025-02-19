@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import dynamic from "next/dynamic";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
@@ -56,9 +57,12 @@ export default function PreSignUpForm() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <img
+        <Image
           src="/signup.png"
           alt="Signup Illustration"
+          height={400}
+          width={400}
+          priority = {true}
           className="max-w-lg w-full drop-shadow-lg rounded-lg"
         />
       </motion.div>

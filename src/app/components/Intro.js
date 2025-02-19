@@ -25,9 +25,7 @@ const ImageText = () => {
           alt="Artboard"
           width={900} // Increased width
           height={700} // Increased height
-          placeholder="blur"
-          blurDataURL="data:Artboard.png"
-          priority
+          priority = {true}
           className="rounded-lg object-cover w-full h-auto max-w-2xl md:max-w-5xl"
         />
       </div>

@@ -16,7 +16,7 @@ export default function FeaturesSection() {
           {/* Feature 1 */}
           <div className="border border-[#F7F0E7] rounded-lg p-6 text-center bg-[#F7F0E7] shadow-lg transition-transform transform hover:scale-105">
             <div className="flex justify-center mb-4">
-              <Image src="/smartphone.png" alt={t("feature1_title")} width={70} height={70} />
+              <Image src="/smartphone.png" alt={t("feature1_title")} width={70} height={70} priority = {true}/>
             </div>
             <h3 className="text-2xl font-semibold text-[#562315]">{t("feature1_title")}</h3>
             <p className="text-gray-700 text-sm mt-2">{t("feature1_description")}</p>
@@ -25,7 +25,7 @@ export default function FeaturesSection() {
           {/* Feature 2 */}
           <div className="border border-[#F7F0E7] rounded-lg p-6 text-center bg-[#F7F0E7] shadow-lg transition-transform transform hover:scale-105">
             <div className="flex justify-center mb-4">
-              <Image src="/money-transfer-1.png" alt={t("feature2_title")} width={70} height={70} />
+              <Image src="/money-transfer-1.png" alt={t("feature2_title")} width={70} height={70} priority = {true} />
             </div>
             <h3 className="text-2xl font-semibold text-[#562315]">{t("feature2_title")}</h3>
             <p className="text-gray-700 text-sm mt-2">{t("feature2_description")}</p>
@@ -34,7 +34,7 @@ export default function FeaturesSection() {
           {/* Feature 3 */}
           <div className="border border-[#F7F0E7] rounded-lg p-6 text-center bg-[#F7F0E7] shadow-lg transition-transform transform hover:scale-105">
             <div className="flex justify-center mb-4">
-              <Image src="/customer-service.png" alt={t("feature3_title")} width={70} height={70} />
+              <Image src="/customer-service.png" alt={t("feature3_title")} width={70} height={70} priority = {true}/>
             </div>
             <h3 className="text-2xl font-semibold text-[#562315]">{t("feature3_title")}</h3>
             <p className="text-gray-700 text-sm mt-2">{t("feature3_description")}</p>
@@ -43,7 +43,7 @@ export default function FeaturesSection() {
           {/* Feature 4 */}
           <div className="border border-[#F7F0E7] rounded-lg p-6 text-center bg-[#F7F0E7] shadow-lg transition-transform transform hover:scale-105">
             <div className="flex justify-center mb-4">
-              <Image src="/smartphone-1.png" alt={t("feature4_title")} width={70} height={70} />
+              <Image src="/smartphone-1.png" alt={t("feature4_title")} width={70} height={70} priority = {true} />
             </div>
             <h3 className="text-2xl font-semibold text-[#562315]">{t("feature4_title")}</h3>
             <p className="text-gray-700 text-sm mt-2">{t("feature4_description")}</p>
@@ -52,7 +52,7 @@ export default function FeaturesSection() {
           {/* Feature 5 */}
           <div className="border border-[#F7F0E7] rounded-lg p-6 text-center bg-[#F7F0E7] shadow-lg transition-transform transform hover:scale-105">
             <div className="flex justify-center mb-4">
-              <Image src="/store.png" alt={t("feature5_title")} width={70} height={70} />
+              <Image src="/store.png" alt={t("feature5_title")} width={70} height={70} priority = {true} />
             </div>
             <h3 className="text-2xl font-semibold text-[#562315]">{t("feature5_title")}</h3>
             <p className="text-gray-700 text-sm mt-2">{t("feature5_description")}</p>
@@ -61,7 +61,7 @@ export default function FeaturesSection() {
           {/* Feature 6 */}
           <div className="border border-[#F7F0E7] rounded-lg p-6 text-center bg-[#F7F0E7] shadow-lg transition-transform transform hover:scale-105">
             <div className="flex justify-center mb-4">
-              <Image src="/transaction.png" alt={t("feature6_title")} width={70} height={70} />
+              <Image src="/transaction.png" alt={t("feature6_title")} width={70} height={70} priority = {true}/>
             </div>
             <h3 className="text-2xl font-semibold text-[#562315]">{t("feature6_title")}</h3>
             <p className="text-gray-700 text-sm mt-2">{t("feature6_description")}</p>
@@ -70,7 +70,7 @@ export default function FeaturesSection() {
           {/* Feature 7 */}
           <div className="border border-[#F7F0E7] rounded-lg p-6 text-center bg-[#F7F0E7] shadow-lg transition-transform transform hover:scale-105">
             <div className="flex justify-center mb-4">
-              <Image src="/payment.png" alt={t("feature7_title")} width={70} height={70} />
+              <Image src="/payment.png" alt={t("feature7_title")} width={70} height={70} priority = {true}/>
             </div>
             <h3 className="text-2xl font-semibold text-[#562315]">{t("feature7_title")}</h3>
             <p className="text-gray-700 text-sm mt-2">{t("feature7_description")}</p>
@@ -79,7 +79,7 @@ export default function FeaturesSection() {
           {/* Feature 8 */}
           <div className="border border-[#F7F0E7] rounded-lg p-6 text-center bg-[#F7F0E7] shadow-lg transition-transform transform hover:scale-105">
             <div className="flex justify-center mb-4">
-              <Image src="/payment-method.png" alt={t("feature8_title")} width={70} height={70} />
+              <Image src="/payment-method.png" alt={t("feature8_title")} width={70} height={70} priority = {true}/>
             </div>
             <h3 className="text-2xl font-semibold text-[#562315]">{t("feature8_title")}</h3>
             <p className="text-gray-700 text-sm mt-2">{t("feature8_description")}</p>

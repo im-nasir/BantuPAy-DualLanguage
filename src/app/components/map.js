@@ -21,6 +21,7 @@ export default function Map() {
           alt="Bantu Pay"
           width={1200} 
           height={800}  
+          priority = {true}
           className="w-full max-w-3xl md:max-w-5xl lg:max-w-7xl rounded-lg"
         />
       </div>

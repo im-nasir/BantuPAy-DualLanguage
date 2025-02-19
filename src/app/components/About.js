@@ -22,9 +22,7 @@ export default function About() {
             alt="Bantu Pay"
             fill
             className="rounded-lg object-cover"
-            placeholder="blur"
-            blurDataURL="data:About.png"
-            priority
+            priority = {true}
           />
           {/* Image Overlay Effect */}
           <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg" />
