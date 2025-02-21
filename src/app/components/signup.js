@@ -58,7 +58,7 @@ export default function PreSignUpForm() {
         transition={{ duration: 0.8 }}
       >
         <Image
-          src="/signup.png"
+          src="/signup.webp"
           alt="Signup Illustration"
           height={400}
           width={400}

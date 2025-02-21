@@ -17,7 +17,7 @@ export default function Map() {
       
       <div className="w-full flex justify-center pt-4">
         <Image 
-          src="/map.png" 
+          src="/map.webp" 
           alt="Bantu Pay"
           width={1200} 
           height={800}  

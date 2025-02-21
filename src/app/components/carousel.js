@@ -10,14 +10,14 @@ import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 
 const images = [
-  "/carousel.png",
-  "/carousel2.png",
-  "/carousel3.png",
-  "/carousel9.png",
-  "/carousel5.png",
-  "/carousel6.png",
-  "/carousel7.png",
-  "/carousel8.png",
+  "/carousel.webp",
+  "/carousel2.webp",
+  "/carousel3.webp",
+  "/carousel9.webp",
+  "/carousel5.webp",
+  "/carousel6.webp",
+  "/carousel7.webp",
+  "/carousel8.webp",
 ];
 
 export default function FullWidthCarousel() {

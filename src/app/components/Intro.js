@@ -21,7 +21,7 @@ const ImageText = () => {
       {/* Right Side: Image */}
       <div className="md:w-3/5 flex justify-center">
         <Image
-          src="/Artboard.png"
+          src="/Artboard.webp"
           alt={t("title")} // Improved SEO
           width={900}
           height={700}
