@@ -7,7 +7,7 @@ import "@/app/globals.css"; // Use absolute path
 export default async function LocaleLayout({ children, params }) {
   // Await params.locale before using it
   const { locale } = await params;
-
+  
   if (!routing.locales.includes(locale)) {
     notFound();
   }
@@ -16,6 +16,10 @@ export default async function LocaleLayout({ children, params }) {
 
   return (
     <html lang={locale}>
+     <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
+      </head>
       <body>
         <NextIntlClientProvider messages={messages}>
           {children}

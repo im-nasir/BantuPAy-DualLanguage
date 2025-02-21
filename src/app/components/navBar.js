@@ -19,7 +19,7 @@ export default function Navbar() {
           <Link href="https://www.facebook.com/BantuPayLTD?_rdc=1&_rdr" target="_blank">
             <Image src="/facebook.svg" alt="Facebook" width={30} height={30} />
           </Link>
-          <Link href="https://facebook.com" target="_blank">
+          <Link href="https://x.com/bantupayltd?s=11" target="_blank">
             <Image src="/twitter.svg" alt="Twitter" width={30} height={30} />
           </Link>
           <Link href="https://www.instagram.com/bantu_pay/" target="_blank">
