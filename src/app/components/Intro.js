@@ -26,34 +26,34 @@ const ImageText = () => {
           {/* Badge */}
           <div className="hero-badge">
             <span className="badge-icon">🚀</span>
-            <span className="badge-text">Next Generation Payment</span>
+            <span className="badge-text font-feature">Next Generation Payment</span>
             <div className="badge-glow"></div>
           </div>
 
           {/* Main Title */}
           <div className="hero-title-wrapper">
             <h1 className="hero-title">
-              <span className="title-brand">Bantu Pay</span>
-              <span className="title-main">{t("title")}</span>
-              <span className="title-accent">{t("title2")}</span>
+              <span className="title-brand font-manuka">Bantu Pay</span>
+              <span className="title-main font-feature">{t("title")}</span>
+              <span className="title-accent font-feature">{t("title2")}</span>
             </h1>
             <div className="title-underline"></div>
           </div>
 
           {/* Description */}
-          <p className="hero-description">
+          <p className="hero-description font-sohne">
             {t("description")}
           </p>
 
           {/* CTA Buttons */}
           <div className="hero-cta">
             <button className="cta-primary">
-              <span className="cta-text">Get Started</span>
+              <span className="cta-text font-feature font-semibold">Get Started</span>
               <div className="cta-glow"></div>
               <div className="cta-ripple"></div>
             </button>
             <button className="cta-secondary">
-              <span className="cta-text">Learn More</span>
+              <span className="cta-text font-sohne font-medium">Learn More</span>
               <svg className="cta-arrow" viewBox="0 0 24 24" fill="none">
                 <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
@@ -63,18 +63,18 @@ const ImageText = () => {
           {/* Stats */}
           <div className="hero-stats">
             <div className="stat-item">
-              <div className="stat-number">50K+</div>
-              <div className="stat-label">Active Users</div>
+              <div className="stat-number font-feature font-bold">50K+</div>
+              <div className="stat-label font-sohne font-medium">Active Users</div>
             </div>
             <div className="stat-divider"></div>
             <div className="stat-item">
-              <div className="stat-number">99.9%</div>
-              <div className="stat-label">Uptime</div>
+              <div className="stat-number font-feature font-bold">99.9%</div>
+              <div className="stat-label font-sohne font-medium">Uptime</div>
             </div>
             <div className="stat-divider"></div>
             <div className="stat-item">
-              <div className="stat-number">24/7</div>
-              <div className="stat-label">Support</div>
+              <div className="stat-number font-feature font-bold">24/7</div>
+              <div className="stat-label font-sohne font-medium">Support</div>
             </div>
           </div>
         </div>
