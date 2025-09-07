@@ -1,7 +1,5 @@
-/* Google Font Imports for Similar Styles */
-/* Note: Manuka, Feature, and Söhne are not available via Google Fonts - these are premium/custom fonts */
-
-@import url('https://fonts.googleapis.com/css2?family=Pacifico:wght@400&family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+/* Optimized Font Loading */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Pacifico:wght@400&display=swap');
 
 /* Alternative Font Configurations (use if you have local font files)
 @font-face {
@@ -36,8 +34,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Global Reset and Base Styles */
-* {
+/* Global Reset and Base Styles - Optimized */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -54,6 +54,29 @@ body {
   overflow-x: hidden;
   min-height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* GPU Acceleration for better performance */
+* {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+/* Optimized animations - reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 /* Modern Futuristic Navbar */
@@ -70,14 +93,10 @@ body {
   padding: 8px 20px;
   z-index: 1000;
   
-  /* Futuristic Glass Morphism */
-  background: linear-gradient(135deg, 
-    rgba(247, 240, 231, 0.1) 0%,
-    rgba(247, 240, 231, 0.05) 50%,
-    rgba(86, 35, 21, 0.1) 100%
-  );
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  /* Optimized Glass Morphism */
+  background: rgba(247, 240, 231, 0.95);
+  backdrop-filter: blur(10px) opacity(0.8);
+  -webkit-backdrop-filter: blur(10px) opacity(0.8);
   
   /* Modern Border */
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -89,12 +108,15 @@ body {
     0 2px 8px rgba(0, 0, 0, 0.05),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
   
-  /* Smooth Transitions */
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  
+  /* Optimized Transitions */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
   /* Hardware Acceleration */
   transform: translateX(-50%) translateZ(0);
-  will-change: transform, box-shadow;
+  will-change: transform, opacity;
+
+  /* Reduce complexity */
+  backface-visibility: hidden;
 }
 
 .navbar:hover {

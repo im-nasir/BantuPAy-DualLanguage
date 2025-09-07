@@ -27,4 +27,11 @@ export default {
     },
   },
   plugins: [],
+
+  // Performance optimizations
+  corePlugins: {
+    // Disable unused features in production
+    // container: process.env.NODE_ENV === 'production' ? false : undefined,
+    // accessibility: process.env.NODE_ENV === 'production' ? false : undefined,
+  },
 };
