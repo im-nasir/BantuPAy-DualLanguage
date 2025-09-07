@@ -18,7 +18,19 @@
           "solution": "Well, that stops now!",
           "paragraph1": "BantuPay is the solution—a mobile banking app facilitating instant money transfers for everyone in D.R. Congo and the diaspora.",
           "paragraph2": "It serves as an E-Wallet and payment system, enabling consumers to pay for goods and services (restaurants, online courses, boutiques, etc.) and deposit/withdraw money from local money agents.",
-          "image_caption": "Your Mobile Banking Who Assures"
+          "image_caption": "Your Mobile Banking Who Assures",
+          
+          "vision_title": "Our Vision",
+          "vision_content": "To become the leading financial technology platform in Central Africa, empowering communities through accessible and innovative banking solutions.",
+          
+          "impact_title": "Our Impact",
+          "impact_content": "Since our inception, we've been committed to bridging the financial gap in D.R. Congo, providing services to underserved communities and the diaspora worldwide.",
+          
+          "team_title": "Our Team",
+          "team_content": "A diverse group of financial experts, technology innovators, and community advocates working together to revolutionize mobile banking in Africa.",
+          
+          "innovation_title": "Innovation First",
+          "innovation_content": "We leverage cutting-edge technology to provide secure, fast, and reliable financial services that meet the evolving needs of our users."
       },
       
         "FeaturesPage": {
