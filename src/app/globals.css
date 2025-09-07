@@ -349,7 +349,8 @@ body {
 
   /* Hero Section Mobile */
   .hero-section {
-    padding: 120px 16px 60px;
+    padding: 120px 16px 0px;
+    min-height: 100vh;
   }
 
   .hero-container {
@@ -500,7 +501,8 @@ body {
 /* Tablet Responsive */
 @media (max-width: 768px) and (min-width: 481px) {
   .hero-section {
-    padding: 110px 20px 50px;
+    padding: 110px 20px 0px;
+    min-height: 100vh;
   }
 
   .hero-container {
@@ -729,7 +731,8 @@ body {
 /* Very Small Screens */
 @media (max-width: 375px) {
   .hero-section {
-    padding: 110px 12px 50px;
+    padding: 110px 12px 0px;
+    min-height: 100vh;
   }
 
   .hero-container {
@@ -870,7 +873,8 @@ body {
 /* Extra Small Screens */
 @media (max-width: 320px) {
   .hero-section {
-    padding: 100px 8px 40px;
+    padding: 100px 8px 0px;
+    min-height: 100vh;
   }
 
   .hero-container {
