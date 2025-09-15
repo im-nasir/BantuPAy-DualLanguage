@@ -17,7 +17,7 @@ const images = [
   "/carousel5.webp",
   "/carousel6.webp",
   "/carousel7.webp",
-  "/carousel8.webp",
+  "/carousel 8.webp",
 ];
 
 export default function FullWidthCarousel() {
